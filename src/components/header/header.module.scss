@@ -1,0 +1,38 @@
+.container {
+}
+
+.avatarContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 30px;
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+
+        border-radius: 50%;
+        box-shadow: 0 0 5px 5px #ff66c4;
+    }
+}
+
+.audioContainer {
+  display: flex;
+
+  justify-content: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .avatar {
+      animation: App-logo-spin infinite 30s linear;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

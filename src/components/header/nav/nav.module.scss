@@ -1,0 +1,47 @@
+.container {
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    @media screen and (max-width: 767px) {
+        padding: 20px;
+    }
+
+    .left {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: white;
+
+    }
+
+    .logo {
+        width: 150px;
+        height: 50px;
+        object-fit: cover;
+
+        box-shadow: 0 0 5px 3px #464296;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+
+        border-radius: 30px;
+        transform: scale(1.2);
+
+        &:hover {
+            transform: scale(1.25);
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 120px;
+            height: 40px;
+
+            transform: scale(1);
+        }
+    }
+}
+

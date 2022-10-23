@@ -1,0 +1,36 @@
+.container {
+    padding: 50px 20px 50px;
+    transition: all 0.5s ease-in;
+
+    @media screen and (max-width: 767px) {
+        padding: 20px;
+    }
+}
+
+.heading {
+    font-size: 30px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 10px;
+    display: inline-block;
+}
+
+li {
+    font-size: 20px;
+    color: white;
+    padding: 5px 0;
+    transition: all 0.2s ease-in;
+ 
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.005);
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 15px;
+    }
+}
